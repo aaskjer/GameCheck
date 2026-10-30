@@ -35,11 +35,20 @@ starts or ends, and leave the messages alone when nothing changed.
 - 🤖 **Bot or webhook.** With a bot the messages can be pinned and older copies cleaned up; a webhook needs no bot at all.
 - ⏱️ **No timer to set up.** The trigger "Streamer.bot Started" is enough: every run plans the next one itself.
 - 🔒 **Exports without secrets.** Bot token, webhook URL and IsThereAnyDeal key can live in persisted global variables.
+- 🎮 **Straight into the launcher.** Optionally, Steam and Epic games open in Steam or the Epic Games Launcher instead
+  of the browser.
+- 🪟 **A settings window.** Everything is set in one window in the style of the Chat Games; the older Set Argument
+  setup keeps working.
 
 ## 🚧 Status
 
-The two actions are in use. A settings window in the style of the Chat Games is being built; the first release with an
-import string and a setup guide follows with it.
+The two actions are in use. The settings window is built; the first release with an import string and a setup guide
+follows once it has run in Streamer.bot.
+
+<p align="center">
+  <img src="Assets/screenshots/discord-dark.png" alt="The settings window: Discord" width="49%">
+  <img src="Assets/screenshots/status-dark.png" alt="The settings window: Status" width="49%">
+</p>
 
 ---
 
