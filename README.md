@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Assets/logo.png" alt="GameCheck" width="200" height="200">
+</p>
+
 <h1 align="center">GameCheck</h1>
 
 <p align="center">
@@ -12,7 +16,9 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/aaskjer/GameCheck/releases"><b>Download</b></a> &nbsp;·&nbsp;
   <a href="Setup-Guide.md"><b>Setup Guide</b></a> &nbsp;·&nbsp;
+  <a href="Import-String.md"><b>Import String</b></a> &nbsp;·&nbsp;
   <a href="CHANGELOG.md"><b>Changelog</b></a>
 </p>
 
