@@ -26,3 +26,5 @@ import that sets everything up at once.
 - **Free Game Check and Game Sale Check are one project.** The code both actions share (Discord, HTTP, arguments,
   state, stores, platforms) is kept once and built into both scripts. Nothing changes for an install: the same
   arguments, the same global variables, the same messages.
+- **🆕 and 🔥 lead the line in both actions.** Game Sale Check showed 🔥 in place of ⏳ before the end and 🆕 after
+  a sale's name; now they come first, as in Free Game Check, and the end always keeps its ⏳.
