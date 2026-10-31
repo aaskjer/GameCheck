@@ -11,6 +11,11 @@
   <img src="https://img.shields.io/github/license/aaskjer/GameCheck" alt="License">
 </p>
 
+<p align="center">
+  <a href="Setup-Guide.md"><b>Setup Guide</b></a> &nbsp;·&nbsp;
+  <a href="CHANGELOG.md"><b>Changelog</b></a>
+</p>
+
 ---
 
 ## 📖 Overview
