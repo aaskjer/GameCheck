@@ -8,8 +8,20 @@ GameCheck is three Streamer.bot actions:
 | `Game Sale Check` | the sale events and top deals messages | `gamesalecheck.cs` |
 | `GameCheck - Settings` | the settings window for both | `gamecheck-settings.cs` |
 
-The first release will bring an import file that sets all three up at once. Until then they are set up by hand
-once, which takes about ten minutes.
+## Import
+
+Click `Import` in [Streamer.bot](https://streamer.bot/) and drag the `GameCheck.sb` file from the
+[releases](https://github.com/aaskjer/GameCheck/releases) into the window, or paste the
+[import string](Import-String.md) instead. Click `Import`, then `Yes` on the popups that follow.
+
+The three actions land in the group `GameCheck`, with their triggers already set: the two checks start with
+Streamer.bot (`Streamer.bot Started`), the settings window opens from its `Test` trigger. Nothing is posted until
+Discord is set up in the window, so go on with [1. Discord](#1-discord) and [4. First start](#4-first-start).
+Steps 2 and 3 are only for setting the actions up by hand.
+
+**Already running Free Game Check or Game Sale Check?** Do not import over them: the import would add a second copy
+of both, and two copies post twice. Paste the new scripts into your existing actions as in step 2 and add only the
+settings action as in step 3 (see also [Coming from Set Arguments](#coming-from-set-arguments)).
 
 ## 1. Discord
 
@@ -30,9 +42,9 @@ copies; a webhook needs no bot at all. One bot and one channel for both actions 
 
 In the channel's settings: `Integrations` → `Webhooks` → `New Webhook` → `Copy Webhook URL`.
 
-## 2. The two actions
+## 2. The two actions (by hand)
 
-Do this once for `Free Game Check` with `freegamecheck.cs` and once for `Game Sale Check` with
+The scripts are inside the import; the release has them as files too. Do this once for `Free Game Check` with `freegamecheck.cs` and once for `Game Sale Check` with
 `gamesalecheck.cs`:
 
 1. In Streamer.bot, open `Actions`, right-click the action list, choose `Add` and enter the name.
@@ -46,7 +58,7 @@ Do this once for `Free Game Check` with `freegamecheck.cs` and once for `Game Sa
 
 No `Set Argument` sub-actions are needed. The settings come from the window.
 
-## 3. The settings window
+## 3. The settings window (by hand)
 
 1. Add an action `GameCheck - Settings` and give it an `Execute C# Code` sub-action with `gamecheck-settings.cs`.
 2. It needs these eight references: `mscorlib.dll`, `System.dll`, `System.Core.dll`, `System.Net.Http.dll`,
