@@ -6,7 +6,7 @@ GameCheck is three Streamer.bot actions:
 |---|---|---|
 | `Free Game Check` | the free games, DLC, loot and demos messages | `freegamecheck.cs` |
 | `Game Sale Check` | the sale events and top deals messages | `gamesalecheck.cs` |
-| `GameCheck - Settings` | the settings window for both | `gamecheck-settings.cs` |
+| `[CG] - Settings` | the settings window for both | `gamecheck-settings.cs` |
 
 ## Import
 
@@ -60,7 +60,7 @@ No `Set Argument` sub-actions are needed. The settings come from the window.
 
 ## 3. The settings window (by hand)
 
-1. Add an action `GameCheck - Settings` and give it an `Execute C# Code` sub-action with `gamecheck-settings.cs`.
+1. Add an action `[CG] - Settings` and give it an `Execute C# Code` sub-action with `gamecheck-settings.cs`.
 2. It needs these eight references: `mscorlib.dll`, `System.dll`, `System.Core.dll`, `System.Net.Http.dll`,
    `Newtonsoft.Json.dll`, `PresentationFramework.dll`, `PresentationCore.dll` and `WindowsBase.dll`. `Find Refs`
    adds most of them; add a missing one in the editor's `References` tab (right-click → `Add reference from
