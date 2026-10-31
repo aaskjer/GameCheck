@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/github/license/aaskjer/GameCheck" alt="License">
   <img src="https://img.shields.io/github/v/release/aaskjer/GameCheck?label=stable" alt="Release">
   <img src="https://img.shields.io/github/downloads/aaskjer/GameCheck/total" alt="Downloads">
-  <img src="https://img.shields.io/github/stars/aaskjer/Better-Stream-Announcements" alt="Stars">
+  <img src="https://img.shields.io/github/stars/aaskjer/GameCheck" alt="Stars">
 </p>
 
 <p align="center">
