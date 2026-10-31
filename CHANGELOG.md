@@ -12,7 +12,7 @@ import that sets everything up at once.
 - **An import.** `GameCheck.sb` and the [import string](Import-String.md) set up all three actions at once, triggers
   included, with no secrets and no settings in them. Every reference holds wherever Streamer.bot is installed.
 - **A logo**, also in the settings window's About page.
-- **A settings window.** The action "GameCheck - Settings" opens a window in the style of the Chat Games for both
+- **A settings window.** The action "[CG] - Settings" opens a window in the style of the Chat Games for both
   actions: Discord, what is posted, timing, platforms and colours. It writes `GameCheck-Settings.json` in the folder
   `GameCheck` next to Streamer.bot, and the bot token, webhook URL and IsThereAnyDeal key into the persisted global
   variables, so an export carries no secrets. A Set Argument value in an action still wins; the window shows such a
