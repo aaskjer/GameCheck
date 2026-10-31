@@ -2,7 +2,10 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## [Unreleased]
+## [1.0.0] - 2026-10-31
+
+The first release of GameCheck: Free Game Check and Game Sale Check as one project, with a settings window and an
+import that sets everything up at once.
 
 ### Added
 
