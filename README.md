@@ -44,7 +44,8 @@ starts or ends, and leave the messages alone when nothing changed.
 - 🏬 **Straight from the stores.** Steam and Epic Games are read directly, with exact end times and prices for your
   country. GOG, Nintendo's European eShop, Prime Gaming and IsThereAnyDeal fill in the rest.
 - ✏️ **Edited, not spammed.** Every topic is one message that is edited in place. A new entry is marked 🆕, one that ends
-  soon 🔥. Optionally the messages are posted anew every few days, all together and in order.
+  soon 🔥, a deal at its lowest price ever 📉 (with an IsThereAnyDeal key), and a giveaway the store does not offer in
+  your country 🚫 (struck through). Optionally the messages are posted anew every few days, all together and in order.
 - 🛟 **Outages don't wipe the list.** A store that fails is replaced by its last good answer for up to 24 hours.
 - 🤖 **Bot or webhook.** With a bot the messages can be pinned and older copies cleaned up; a webhook needs no bot at all.
 - ⏱️ **No timer to set up.** The trigger "Streamer.bot Started" is enough: every run plans the next one itself.
