@@ -48,7 +48,6 @@ starts or ends, and leave the messages alone when nothing changed.
   your country 🚫 (struck through). Optionally the messages are posted anew every few days, all together and in order.
 - 🛟 **Outages don't wipe the list.** A store that fails is replaced by its last good answer for up to 24 hours.
 - 🤖 **Bot or webhook.** With a bot the messages can be pinned and older copies cleaned up; a webhook needs no bot at all.
-- ⏱️ **No timer to set up.** The trigger "Streamer.bot Started" is enough: every run plans the next one itself.
 - 🔒 **Exports without secrets.** Bot token, webhook URL and IsThereAnyDeal key can live in persisted global variables.
 - 🎮 **Straight into the launcher.** Optionally, Steam and Epic games open in Steam or the Epic Games Launcher instead
   of the browser.
