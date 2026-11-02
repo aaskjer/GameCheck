@@ -2,6 +2,14 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.0.1] - 2026-11-02
+
+### Changed
+
+- **One footer for every embed: "GameCheck by aaskjer · updated".** The time after it is the embed's last update -
+  both actions edit their messages in place on every run - and the footer now says so instead of reading like the
+  time the message was sent. The actions' own names ("FreeGamesCheck", "GameSaleCheck") are gone from it.
+
 ## [1.0.0] - 2026-10-31
 
 The first release of GameCheck: Free Game Check and Game Sale Check as one project, with a settings window and an
