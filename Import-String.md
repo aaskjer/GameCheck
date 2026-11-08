@@ -1,5 +1,4 @@
-## GameCheck import string for streamer.bot
- - ![GitHub Release](https://img.shields.io/github/v/release/aaskjer/GameCheck)
+## GameCheck import string for streamer.bot - ![GitHub Release](https://img.shields.io/github/v/release/aaskjer/GameCheck)
 ![GitHub Release Date](https://img.shields.io/github/release-date/aaskjer/GameCheck)
 
 ```bash
