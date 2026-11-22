@@ -2,6 +2,50 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2.0.0] - 2026-11-22
+
+The settings window is now built with [UIFramework for streamer.bot](https://github.com/aaskjer/UIFramework-Streamer.bot),
+the window the Chat Games use. It looks and works like the window before and brings what that framework has. What
+the two checks post has not changed.
+
+To update, import the new version over the old one: the three actions are replaced, the settings file and the
+secrets stay. The first time the window opens, a dialog asks whether to download `UIFramework.dll`; click `Yes`.
+
+### Added
+
+- **The header says `off`** for an action whose every topic is switched off, next to `bot`, `webhook` and
+  `not set up` as before.
+- **The country is picked from a list** of all countries instead of typed as a two-letter code.
+- **The Status page follows the actions by itself.** It asks again every ten seconds while it is open; the
+  *Refresh* button is gone.
+- **Your own layout.** The pen in the footer lets you rename, move and hide fields and pages. It is kept in
+  `uiframework.layout.json` beside the settings and survives every import.
+- **Updates of the window.** UIFramework checks for a newer version of itself when the window opens and asks
+  before it downloads one.
+
+### Changed
+
+- **`[CG] - Settings` is UIFramework's settings action.** It needs four references instead of eight and carries
+  no window of its own: the window is `UIFramework.dll` in the folder `UIFramework` next to Streamer.bot,
+  downloaded once on the first open. The action finds Free Game Check by its ID; by its name only in an install
+  made by hand.
+- **The settings file has one key per setting** (`freeCountry`, `salesDealLimit`) instead of a section per action.
+  The window moves the old values with its first save, and both actions read either form: nothing is lost and
+  nothing has to be done.
+- **"Both actions use the same bot and channel" is a setting now.** While it is on, Game Sale Check posts with the
+  bot, channel or webhook of Free Game Check; before, the window kept two copies alike. It starts on while both
+  connections are the same, as it did.
+- **A setting held by a Set Argument is shown locked, without its value.** The window before filled its fields
+  with the Set Argument values on its first open; this one does not. To manage such a setting in the window,
+  remove its Set Argument, run the action once and set the value in the window.
+- **Min. discount is 1 to 99 %**, the range the action has always kept to; the window allowed 0 to 100.
+- A pasted channel link is turned into the channel ID when the action reads it, not while it is typed.
+
+### Removed
+
+- **The check of a webhook URL's shape before saving.** The window hands a secret to the action only as set or
+  not set, never as its value.
+
 ## [1.0.1] - 2026-11-02
 
 ### Changed
