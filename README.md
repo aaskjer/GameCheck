@@ -51,15 +51,20 @@ starts or ends, and leave the messages alone when nothing changed.
 - 🔒 **Exports without secrets.** Bot token, webhook URL and IsThereAnyDeal key can live in persisted global variables.
 - 🎮 **Straight into the launcher.** Optionally, Steam and Epic games open in Steam or the Epic Games Launcher instead
   of the browser.
-- 🪟 **A settings window.** Everything is set in one window in the style of the Chat Games; the older Set Argument
+- 🪟 **A settings window.** Everything is set in one window, built with
+  [UIFramework](https://github.com/aaskjer/UIFramework-Streamer.bot) like the windows of the Chat Games: a search
+  over every setting, a header that says how each action posts, a layout you can rearrange. The older Set Argument
   setup keeps working.
 
 ---
+
+<p align="center"><img alt="The Free games page of the settings window" src="Assets/screenshots/free-games-dark.png" width="460"></p>
 
 ## Credits
 
 - **Author:** [aaskjer on Twitch](https://twitch.tv/aaskjer) · [aaskjer.github.io](https://aaskjer.github.io/)
 - **Built for:** [Streamer.bot](https://streamer.bot) by [nate1280](https://www.patreon.com/c/nate1280/home)
+- **Settings window:** [UIFramework for streamer.bot](https://github.com/aaskjer/UIFramework-Streamer.bot)
 - **Data & services:**
   - [GamerPower](https://www.gamerpower.com): giveaways the stores don't list themselves
   - [IsThereAnyDeal](https://isthereanydeal.com): giveaways, deals of other shops and lowest prices (with your own key)
