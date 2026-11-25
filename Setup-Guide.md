@@ -96,10 +96,15 @@ that action by its name, so the name has to be exactly `Free Game Check`.
 The header says how each action posts with what the window holds: `Free: bot`, `Sales: webhook`, `not set up`, or
 `off` while every topic of an action is switched off.
 
-`Ctrl+1` … `Ctrl+6` switch pages, `Ctrl+S` saves, and `Ctrl+F` searches all settings, by their label or their key
+`Ctrl+1` … `Ctrl+7` switch pages, `Ctrl+S` saves, and `Ctrl+F` searches all settings, by their label or their key
 (`minDiscount` finds *Min. discount*). The pen in the footer lets you rename, move and hide fields and pages.
 
 <p align="center"><img alt="The Status page of the settings window" src="Assets/screenshots/status-dark.png" width="460"></p>
+
+The **Log** page shows what both checks wrote into Streamer.bot's log, so a store that failed or a message that
+could not be posted is found without leaving the window.
+
+<p align="center"><img alt="The Log page of the settings window" src="Assets/screenshots/log-dark.png" width="460"></p>
 
 ## Coming from Set Arguments
 
@@ -137,11 +142,12 @@ question from then on. If no launcher is installed, the page offers the store's 
 
 ## When something does not work
 
-- **Nothing is posted:** open Streamer.bot's log and look for lines starting with `[FreeGames]` or `[GameSales]`.
-  They say which store failed, or that the bot token or channel is missing.
+- **Nothing is posted:** open the **Log** page of the settings window. It shows the lines both checks wrote into
+  Streamer.bot's log, `FreeGames` and `GameSales`: which store failed, or that the bot token or channel is
+  missing. In Streamer.bot's own log the same lines start with `[FreeGames]` or `[GameSales]`.
 - **The script does not compile:** compare its references with the lists above.
 - **The window does not open:** only one window can be open at a time; look in the log for `[GameCheck/Settings]`.
-  GameCheck needs UIFramework 2.2.0 or newer: with an older one installed, the settings action offers the update
+  GameCheck needs UIFramework 2.3.0 or newer: with an older one installed, the settings action offers the update
   instead of opening the window.
 - **"There is no action named 'Free Game Check'":** the settings action did not find the check it asks. Import
   again, or give the action made by hand exactly that name.

@@ -2,6 +2,20 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2.1.0] - 2026-11-25
+
+### Added
+
+- **A Log page in the settings window.** It shows what the two checks and the window wrote into Streamer.bot's
+  log, newest first: which store answered, what was posted, what failed and why. With a search, a filter by level
+  (`ERR`, `WRN`, `INF`) and by source (`FreeGames`, `GameSales`, the settings window), and the day to pick. It
+  follows the log while the checks run. Before, those lines had to be looked up in Streamer.bot's own log window.
+
+### Changed
+
+- **The window needs UIFramework 2.3.0.** With an older one installed, the settings action offers the update when
+  the window is opened.
+
 ## [2.0.0] - 2026-11-22
 
 The settings window is now built with [UIFramework for streamer.bot](https://github.com/aaskjer/UIFramework-Streamer.bot),
