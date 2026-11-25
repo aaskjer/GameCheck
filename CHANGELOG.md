@@ -2,6 +2,19 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2.1.1] - 2026-11-25
+
+### Fixed
+
+- **The settings window opened by itself every hour, and the checks stopped.** After *Check now* on the Status
+  page, Free Game Check and Game Sale Check took the settings action's ID for their own (Streamer.bot hands it on
+  to the run it starts) and planned their next runs for that one. *Check now* now hands the action its own ID and
+  never starts the settings action. Free Game Check removes such a planned run the next time the window opens; the
+  log says so with a warning.
+
+To update, import the new version over the old one, then press *Check now* for both actions on the Status page
+once (or restart Streamer.bot), so they plan their own runs again.
+
 ## [2.1.0] - 2026-11-25
 
 ### Added
